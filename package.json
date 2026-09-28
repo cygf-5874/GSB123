@@ -1,0 +1,19 @@
+{
+  "name": "gsb123-dirwalk",
+  "version": "0.0.0",
+  "private": true,
+  "description": "目录遍历与忽略规则库（Node.js 22，ESM，零第三方依赖）",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "main": "./src/walk.js",
+  "exports": {
+    ".": "./src/walk.js",
+    "./ignore": "./src/ignore.js"
+  },
+  "scripts": {
+    "check": "node check/check.mjs",
+    "test": "node --test"
+  }
+}
